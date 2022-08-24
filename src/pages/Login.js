@@ -66,12 +66,11 @@ export default function Login() {
       <RootStyle>
         <HeaderStyle>
           <Logo />
-
           {smUp && (
             <Typography variant="body2" sx={{ mt: { md: -2 } }}>
-              Don’t have an account? {''}
+              Chưa có tài khoản? {''}
               <Link variant="subtitle2" component={RouterLink} to="/register">
-                Get started
+                Đăng kí
               </Link>
             </Typography>
           )}
@@ -89,20 +88,20 @@ export default function Login() {
         <Container maxWidth="sm">
           <ContentStyle>
             <Typography variant="h4" gutterBottom>
-              Sign in to Minimal
+              Đăng nhập
             </Typography>
 
-            <Typography sx={{ color: 'text.secondary', mb: 5 }}>Enter your details below.</Typography>
+            {/* <Typography sx={{ color: 'text.secondary', mb: 5 }}>Enter your details below.</Typography> */}
 
-            <AuthSocial />
+            {/* <AuthSocial /> */}
 
             <LoginForm />
 
             {!smUp && (
               <Typography variant="body2" align="center" sx={{ mt: 3 }}>
-                Don’t have an account?{' '}
+                Chưa có tài khoản?{' '}
                 <Link variant="subtitle2" component={RouterLink} to="/register">
-                  Get started
+                  Đăng kí
                 </Link>
               </Typography>
             )}
